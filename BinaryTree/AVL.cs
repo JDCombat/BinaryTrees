@@ -228,7 +228,6 @@ public class AVLTree<T> where T : IComparable<T>
         {
             return;
         }
-        UpdateHeights(Root.Left);
         PrintTree(Root, "", true);
     }
 

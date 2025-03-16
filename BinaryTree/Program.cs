@@ -13,7 +13,6 @@ public class Program
             tree.Insert(480);
             tree.Insert(5);
             tree.Insert(4);
-            tree.Insert(3);
             tree.Insert(2);
             tree.Insert(1);
             tree.Insert(6);
@@ -22,6 +21,7 @@ public class Program
             tree.Insert(3000);
             tree.Insert(321);
             tree.Insert(29);
+            tree.Insert(3);
 
             
             // Console.WriteLine(tree.Search(tree.Root,480)!.Left);
@@ -31,13 +31,10 @@ public class Program
             
             // tree.Delete(40);
             // tree.Delete(3000);
-            Console.WriteLine(tree.Root!.Right);
-            
-            Console.WriteLine(tree.IsBalanced());
-
-            Console.WriteLine(tree.Root!.Data);
 
             tree.PrintTree();
+
+            Console.WriteLine(tree.Root!.Left);
 
             tree.InOrder(tree.Root!, new List<int>()).ForEach(i => Console.Write(i + " "));
             Console.WriteLine();
